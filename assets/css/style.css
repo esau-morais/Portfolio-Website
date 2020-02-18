@@ -323,11 +323,14 @@ span {
 /* About Me Starts */
 p.about-me {
   font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
 }
+
 p.contact {
   font-size: 32px;
   margin: 2%;
 }
+
 /* About Me Ends */
 
 /* Content Media Queries Start */
@@ -337,6 +340,10 @@ p.contact {
   }
 
   .text .btn {
+    font-size: 1.4rem;
+  }
+
+  p.about-me {
     font-size: 1.4rem;
   }
 }
