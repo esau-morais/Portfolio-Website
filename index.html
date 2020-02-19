@@ -31,9 +31,9 @@
           <img src="/assets/images/logo.png" alt="EM">
         </a>
         <ul class="nav-list">
-          <li><a href="/components/my-projects/">My Projects</a></li>
+          <li><a href="/components/my-projects/">Meus Projetos</a></li>
 
-          <li><a href="/components/about-me/">About Me</a></li>
+          <li><a href="/components/about-me/">Sobre</a></li>
         </ul>
       </nav>
     </div>
@@ -44,16 +44,30 @@
   <section class="content">
     <div class="text">
       <h1>Esaú Morais</h1>
-      <p>A Simple Portfolio Website</p>
-      <a href="https://wa.me/5586988160268" class="btn icon ion-logo-whatsapp" style="margin: 0 .4em 0 0;" target="_blank"></a>
-      <a href="https://instagram.com/e.mmorais" class="btn icon ion-logo-instagram" style="margin: 0 .4em 0 0;" target="_blank"></a>
-      <a href="https://github.com/esau-morais" class="btn icon ion-logo-github" target="_blank"></a>
+      <span id="typed"></span>
+      <div class="social" style="margin: 2% 0 0 0;">
+        <a href="https://wa.me/5586988160268" class="btn icon ion-logo-whatsapp" style="margin: 0 .4em 0 0;"
+          target="_blank"></a>
+        <a href="https://instagram.com/e.mmorais" class="btn icon ion-logo-instagram" style="margin: 0 .4em 0 0;"
+          target="_blank"></a>
+        <a href="https://github.com/esau-morais" class="btn icon ion-logo-github" target="_blank"></a>
+      </div>
     </div>
   </section>
 
-  <footer>By<span> Esaú Morais</span></footer>
+  <footer>Por<span> Esaú Morais</span></footer>
 
   <!-- Scripts JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <script>
+    let options = {
+      strings: ["Designer", "Desenvolvedor"],
+      typeSpeed: 100,
+      backDelay: 50,
+      loop: true
+    }
+    let typed = new Typed("#typed", options);
+  </script>
   <script src="/assets/js/index.js"></script>
 </body>
 
