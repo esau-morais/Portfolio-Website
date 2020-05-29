@@ -7,6 +7,8 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-signin-client_id"
+    content="212801046247-pt6j4n05c1fndgbel19ch0uk8jh9unm6.apps.googleusercontent.com">
   <!-- Main Title -->
   <title>Esaú Morais</title>
   <!-- Required Link Tags -->
@@ -41,6 +43,10 @@
             kofiwidget2.init('Compre um ko-fi', '#323B43', 'A0A51J6PE');
             kofiwidget2.draw();
           </script>
+
+          <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+          <a href="#" onclick="signOut();">Sign out</a>
         </ul>
       </nav>
     </div>
@@ -78,8 +84,9 @@
     }
     let typed = new Typed("#typed", options);
   </script>
-
-
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="/assets/js/login.js"></script>
+  <script src="/assets/js/logout.js"></script>
   <script src="/assets/js/index.js"></script>
 </body>
 
